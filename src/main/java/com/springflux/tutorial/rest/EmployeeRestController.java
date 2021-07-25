@@ -27,8 +27,8 @@ public class EmployeeRestController {
 	
 	@RequestMapping(value = { "/create", "/" }, method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody Employee e) {
-        employeeService.create(e);
+    public void create(@RequestBody Employee em) {
+        employeeService.create(em);
     }
  
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
